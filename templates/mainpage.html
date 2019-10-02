@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block title %}Download Music{% endblock %}
+{% block body %}
+<div id="container">
+  <h2>Submit SONG</h2>
+    {% if error %}
+      <p class=error><strong>Error:</strong>{{ error }}</p>
+    {% endif %}
+    {% if msg %}
+      <p class=msg><strong>Info:</strong>{{ msg }}</p>
+    {% endif %}
+</div>
+    <p class="status" style="visibility:">Status: {{ status }}</p>
+    <p>URL:</p>
+    {% if show_back_button %}
+      <form action="/">
+        <input type="submit" name="go_back" value="Return to main page">
+      </form>
+    {% endif %}
+      <input type=text id="input_field" name=input>
+      <input type=submit id="button" value="Download">
+      <script src="static/mainpage_logic.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        var p_elm = $('p');
+        $(function(){
+          $(submit_button).bind('click', function() {
+            var input_song = document.getElementById('input_field').value;
+            if (user_input.value.includes('spotify:track:')) {
+              window.location.href = '/get?song=' + input_song;
+            } else if (user_input.value.includes('spotify:playlist:')) {
+              window.location.href = '/dlslist';
+            } else if (user_input.value.includes('watch?v=') && user_input.value.includes('&list=')) {
+              window.location.href = 'dlylist';
+            } else if (user_input.value.includes('watch?v=')) {
+              window.location.href = 'dlysingle';
+            }
+              return true;
+          });
+        });
+      </script>
+{% endblock %}

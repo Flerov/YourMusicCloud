@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}Downloading Music{% endblock %}
+{% block body %}
+<h2>Song Downloaded</h2>
+<form action="/sync" method=post>
+    <p>Do you want to synchronize with your Dropbox?</p>
+    <input type=submit value="Synchronize">
+</form>
+{% endblock %}
