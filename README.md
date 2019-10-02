@@ -1,18 +1,18 @@
-# YourMusicCloud (WORK IN PROGRESS UPDATE COMING SOON UNTIL NOW NOT WORKING)
-(db_updown.py forked from dropdown example)
+# YourMusicCloud
 Tired of paying money for streaming services? I got your back. 
 
-Recently my friend kicked me out of his spotify premium family.
-So I decided to make my own music cloud. Feel free to use it or to expand this project.
+This app is build on top of flask and uses spotify-dowloader to easily download spotify tracks over youtube
 
-You can run this programm from your raspberry pi or on another server.
+This is a alpha version that I have made for fun and without any planing! So the code structure could definitly be better.
+There will also come many futures.
 
-This programm provides a web server which starts on adress: 127.0.0.1 (localhost) and port: 8082
-
-You will see an input box in which you can submit your song. Which will automatically be downloaded from youtube with a cover.
-Submit your request in the following format in the input box
-single song : this song - this artist
-multiple songs: this song - this artist.that song - that artist.this song - that artist
-(seperate each song with a dot (.) followed by the next song name)
-
-in further updates you will also be able to provide youtube/spotify playlist links and youtube/spotify song links
+What you currently can: 
++ Submit a spotify track link in the following format> 'spotify:track:<someuid>' (You can get that link from spotify)
+  That track will asynchroniously be downloaded and added to your standard 'Music' folder
++  All the futures provided by 'spotify-downloader' (most have to come in further updates)
+  
+What you will be able to do after I update this repository:
++ Submit a song and artist name to get the song
++ Submit a album and artist name to download the whole album
++ Submit a youtube playlist link to get them songs
++ Submit a spotify playlist link to get them song
