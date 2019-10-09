@@ -27,4 +27,4 @@ Port: 50000
 
 !Tip: change localhost to your local ip to call webpage from all devices connected in your network like phone, tablet, pc
 
-![Alt text](https://github.com/Flerov/YourMusicCloud/blob/pictures/web-app%20(2).png)
+![Alt text](https://github.com/Flerov/YourMusicCloud/blob/pictures/web-app.png)
