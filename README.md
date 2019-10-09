@@ -7,6 +7,7 @@ This is a alpha version that I have made for fun and without any planing! So the
 There will also come many futures.
 
 What you currently can: 
++ Submit a song as a string, but be sure that the song is written correctly and available on youtube since the first result matching your input will be downloaded
 + Submit a spotify track link in the following format > 'spotify:track:<someuid>' (You can get that link from spotify)
   That track will asynchroniously be downloaded and added to your standard 'Music' folder
 +  All the futures provided by 'spotify-downloader' (most have to come in further updates)
