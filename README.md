@@ -13,7 +13,6 @@ What you currently can:
 +  All the futures provided by 'spotify-downloader' (most have to come in further updates)
   
 What you will be able to do after I update this repository:
-+ Submit a song and artist name to get the song
 + Submit a album and artist name to download the whole album
 + Submit a youtube playlist link to get them songs
 + Submit a spotify playlist link to get them song
