@@ -33,7 +33,7 @@
             } else if (user_input.value.includes('watch?v=') && user_input.value.includes('&list=')) {
               window.location.href = 'dlylist';
             } else if (user_input.value.includes('watch?v=')) {
-              window.location.href = 'dlysingle';
+              window.location.href = '/get?song=' + input_song;
             }
               return true;
           });
